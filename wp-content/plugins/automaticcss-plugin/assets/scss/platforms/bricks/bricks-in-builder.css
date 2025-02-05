@@ -1,0 +1,24 @@
+#bricks-popup.templates img {
+  -o-object-fit: cover !important;
+     object-fit: cover !important;
+}
+
+#bricks-popup .bricks-layout-item-inner.has-img:hover .overlay-wrapper {
+  opacity: 0.5;
+}
+
+#bricks-popup.templates .bricks-layout-item-inner .button.type {
+  display: none !important;
+}
+
+#bricks-popup.templates .bricks-layout-item-inner .overlay-wrapper .user {
+  display: none !important;
+}
+
+#bricks-popup.templates #bricks-popup-inner {
+  max-width: 100% !important;
+}
+
+[data-balloon=transparent].color-button {
+  border: 1px dashed black;
+}/*# sourceMappingURL=bricks-in-builder.css.map */

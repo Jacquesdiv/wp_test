@@ -1,0 +1,92 @@
+:root {
+  --f-label-size: clamp(1.6rem, 0.2173913043vw + 1.5217391304rem, 1.8rem);
+  --f-label-font-weight: 400;
+  --f-label-line-height: 1.2;
+  --f-label-padding-x: 0;
+  --f-label-padding-y: 0;
+  --f-label-margin-bottom: 0.25em;
+  --f-label-text-transform: ;
+  --f-label-inside-position-left: 1.5em;
+  --f-label-inside-position-top: 0;
+  --f-label-inside-scale: 1;
+  --f-legend-text-weight: 600;
+  --f-legend-size: clamp(1.8rem, 0.2173913043vw + 1.7217391304rem, 2rem);
+  --f-legend-margin-bottom: 1em;
+  --f-legend-border: none;
+  --f-legend-line-height: 1.2;
+  --f-help-text-weight: 400;
+  --f-help-size: clamp(1.2rem, 0.2173913043vw + 1.1217391304rem, 1.4rem);
+  --f-help-line-height: 1.4;
+  --f-help-margin-block: 0.5em 0;
+  --f-field-margin-bottom: 1.5em;
+  --f-fieldset-margin-bottom: 1.5em;
+  --f-grid-gutter: 2rem;
+  --f-input-border-style: solid;
+  --f-input-border-top-size: 0.1rem;
+  --f-input-border-right-size: 0.1rem;
+  --f-input-border-bottom-size: 0.1rem;
+  --f-input-border-left-size: 0.1rem;
+  --f-input-border-radius: 0.5em;
+  --f-input-size: clamp(1.6rem, 0.2173913043vw + 1.5217391304rem, 1.8rem);
+  --f-input-font-weight: 400;
+  --f-input-line-height: 1.1;
+  --f-input-height: 50pxrem;
+  --f-input-padding-x: 1em;
+  --f-input-padding-y: 1.2em;
+  --f-btn-border-style: solid;
+  --f-btn-border-width: 1px;
+  --f-btn-border-radius: var(--btn-radius);
+  --f-btn-text-size: clamp(1.6rem, 0.2173913043vw + 1.5217391304rem, 1.8rem);
+  --f-btn-font-weight: 400;
+  --f-btn-line-height: 1.1;
+  --f-btn-padding-y: 0.5em;
+  --f-btn-padding-x: 1em;
+  --f-btn-margin-top: 0;
+  --f-btn-text-decoration: ;
+  --f-btn-text-transform: ;
+  --f-option-label-font-weight: 400;
+  --f-option-label-size: clamp(1.4rem, 0.2173913043vw + 1.3217391304rem, 1.6rem);
+  --f-option-label-spacing: 0.5em;
+  --f-progress-height: 3rem;
+  --f-progress-bar-radius: 0.5em;
+  --f-tab-border-size: 0px;
+  --f-tab-border-style: solid;
+  --f-tab-border-radius: 0.5em;
+  --f-tab-text-size: clamp(1.6rem, 0.2173913043vw + 1.5217391304rem, 1.8rem);
+  --f-tab-text-weight: 400;
+  --f-tab-text-line-height: 1;
+  --f-tab-text-align: center;
+  --f-tab-text-transform: ;
+  --f-tab-text-decoration: none;
+  --f-tab-padding-y: 0.75em;
+  --f-tab-padding-x: 1.5em;
+  --f-tab-margin-x: 0;
+  --f-tab-width: auto;
+  --f-tab-active-border-bottom-size: 3px;
+  --f-tab-active-text-weight: 600;
+  --f-tab-active-border-size: 0px;
+  --f-tab-active-border-style: solid;
+  --f-tab-group-padding-y: 0;
+  --f-tab-group-padding-x: 0;
+  --f-tab-group-border-bottom-size: 2px;
+  --f-tab-group-border-bottom-style: solid;
+  --f-tab-group-margin-bottom: 3rem;
+}
+
+main:has(.form--dark) ~ .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_current,
+main:has(.form--dark) ~ .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div.xdsoft_current,
+main:has(.form--dark) ~ .xdsoft_datetimepicker .xdsoft_label > .xdsoft_select > div > .xdsoft_option.xdsoft_current,
+main:has(.form--dark) ~ .xdsoft_datetimepicker .xdsoft_label > .xdsoft_select > div > .xdsoft_option:hover,
+main:has(.form--dark) ~ .xdsoft_datetimepicker .xdsoft_calendar td:hover,
+main:has(.form--dark) ~ .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div:hover {
+  background: var(--primary) !important;
+}
+
+main:has(.form--light) ~ .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_current,
+main:has(.form--light) ~ .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div.xdsoft_current,
+main:has(.form--light) ~ .xdsoft_datetimepicker .xdsoft_label > .xdsoft_select > div > .xdsoft_option.xdsoft_current,
+main:has(.form--light) ~ .xdsoft_datetimepicker .xdsoft_label > .xdsoft_select > div > .xdsoft_option:hover,
+main:has(.form--light) ~ .xdsoft_datetimepicker .xdsoft_calendar td:hover,
+main:has(.form--light) ~ .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div:hover {
+  background: var(--primary) !important;
+}/*# sourceMappingURL=forms.css.map */

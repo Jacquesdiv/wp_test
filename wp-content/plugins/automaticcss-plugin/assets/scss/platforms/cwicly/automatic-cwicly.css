@@ -1,0 +1,480 @@
+body :focus {
+  outline: none;
+  box-shadow: none;
+}
+body :focus-visible {
+  outline-style: solid;
+  outline-color: var(--focus-color);
+  outline-width: var(--focus-width);
+  outline-offset: var(--focus-offset);
+}
+@supports not selector(:focus-visible) {
+  body :focus {
+    outline-style: solid;
+    outline-color: var(--focus-color);
+    outline-width: var(--focus-width);
+    outline-offset: var(--focus-offset);
+  }
+}
+body *:focus.focus--action {
+  --focus-color: var(--action);
+}
+body .focus--action *:focus,
+body .focus--action:focus-within {
+  --focus-color: var(--action);
+}
+body *:focus.focus--action-hover {
+  --focus-color: var(--action-hover);
+}
+body .focus--action-hover *:focus,
+body .focus--action-hover:focus-within {
+  --focus-color: var(--action-hover);
+}
+body *:focus.focus--action-ultra-light {
+  --focus-color: var(--action-ultra-light);
+}
+body .focus--action-ultra-light *:focus,
+body .focus--action-ultra-light:focus-within {
+  --focus-color: var(--action-ultra-light);
+}
+body *:focus.focus--action-light {
+  --focus-color: var(--action-light);
+}
+body .focus--action-light *:focus,
+body .focus--action-light:focus-within {
+  --focus-color: var(--action-light);
+}
+body *:focus.focus--action-semi-light {
+  --focus-color: var(--action-semi-light);
+}
+body .focus--action-semi-light *:focus,
+body .focus--action-semi-light:focus-within {
+  --focus-color: var(--action-semi-light);
+}
+body *:focus.focus--action-semi-dark {
+  --focus-color: var(--action-semi-dark);
+}
+body .focus--action-semi-dark *:focus,
+body .focus--action-semi-dark:focus-within {
+  --focus-color: var(--action-semi-dark);
+}
+body *:focus.focus--action-dark {
+  --focus-color: var(--action-dark);
+}
+body .focus--action-dark *:focus,
+body .focus--action-dark:focus-within {
+  --focus-color: var(--action-dark);
+}
+body *:focus.focus--action-ultra-dark {
+  --focus-color: var(--action-ultra-dark);
+}
+body .focus--action-ultra-dark *:focus,
+body .focus--action-ultra-dark:focus-within {
+  --focus-color: var(--action-ultra-dark);
+}
+body *:focus.focus--primary {
+  --focus-color: var(--primary);
+}
+body .focus--primary *:focus,
+body .focus--primary:focus-within {
+  --focus-color: var(--primary);
+}
+body *:focus.focus--primary-hover {
+  --focus-color: var(--primary-hover);
+}
+body .focus--primary-hover *:focus,
+body .focus--primary-hover:focus-within {
+  --focus-color: var(--primary-hover);
+}
+body *:focus.focus--primary-ultra-light {
+  --focus-color: var(--primary-ultra-light);
+}
+body .focus--primary-ultra-light *:focus,
+body .focus--primary-ultra-light:focus-within {
+  --focus-color: var(--primary-ultra-light);
+}
+body *:focus.focus--primary-light {
+  --focus-color: var(--primary-light);
+}
+body .focus--primary-light *:focus,
+body .focus--primary-light:focus-within {
+  --focus-color: var(--primary-light);
+}
+body *:focus.focus--primary-semi-light {
+  --focus-color: var(--primary-semi-light);
+}
+body .focus--primary-semi-light *:focus,
+body .focus--primary-semi-light:focus-within {
+  --focus-color: var(--primary-semi-light);
+}
+body *:focus.focus--primary-semi-dark {
+  --focus-color: var(--primary-semi-dark);
+}
+body .focus--primary-semi-dark *:focus,
+body .focus--primary-semi-dark:focus-within {
+  --focus-color: var(--primary-semi-dark);
+}
+body *:focus.focus--primary-dark {
+  --focus-color: var(--primary-dark);
+}
+body .focus--primary-dark *:focus,
+body .focus--primary-dark:focus-within {
+  --focus-color: var(--primary-dark);
+}
+body *:focus.focus--primary-ultra-dark {
+  --focus-color: var(--primary-ultra-dark);
+}
+body .focus--primary-ultra-dark *:focus,
+body .focus--primary-ultra-dark:focus-within {
+  --focus-color: var(--primary-ultra-dark);
+}
+body *:focus.focus--secondary {
+  --focus-color: var(--secondary);
+}
+body .focus--secondary *:focus,
+body .focus--secondary:focus-within {
+  --focus-color: var(--secondary);
+}
+body *:focus.focus--secondary-hover {
+  --focus-color: var(--secondary-hover);
+}
+body .focus--secondary-hover *:focus,
+body .focus--secondary-hover:focus-within {
+  --focus-color: var(--secondary-hover);
+}
+body *:focus.focus--secondary-ultra-light {
+  --focus-color: var(--secondary-ultra-light);
+}
+body .focus--secondary-ultra-light *:focus,
+body .focus--secondary-ultra-light:focus-within {
+  --focus-color: var(--secondary-ultra-light);
+}
+body *:focus.focus--secondary-light {
+  --focus-color: var(--secondary-light);
+}
+body .focus--secondary-light *:focus,
+body .focus--secondary-light:focus-within {
+  --focus-color: var(--secondary-light);
+}
+body *:focus.focus--secondary-semi-light {
+  --focus-color: var(--secondary-semi-light);
+}
+body .focus--secondary-semi-light *:focus,
+body .focus--secondary-semi-light:focus-within {
+  --focus-color: var(--secondary-semi-light);
+}
+body *:focus.focus--secondary-semi-dark {
+  --focus-color: var(--secondary-semi-dark);
+}
+body .focus--secondary-semi-dark *:focus,
+body .focus--secondary-semi-dark:focus-within {
+  --focus-color: var(--secondary-semi-dark);
+}
+body *:focus.focus--secondary-dark {
+  --focus-color: var(--secondary-dark);
+}
+body .focus--secondary-dark *:focus,
+body .focus--secondary-dark:focus-within {
+  --focus-color: var(--secondary-dark);
+}
+body *:focus.focus--secondary-ultra-dark {
+  --focus-color: var(--secondary-ultra-dark);
+}
+body .focus--secondary-ultra-dark *:focus,
+body .focus--secondary-ultra-dark:focus-within {
+  --focus-color: var(--secondary-ultra-dark);
+}
+body *:focus.focus--tertiary {
+  --focus-color: var(--tertiary);
+}
+body .focus--tertiary *:focus,
+body .focus--tertiary:focus-within {
+  --focus-color: var(--tertiary);
+}
+body *:focus.focus--tertiary-hover {
+  --focus-color: var(--tertiary-hover);
+}
+body .focus--tertiary-hover *:focus,
+body .focus--tertiary-hover:focus-within {
+  --focus-color: var(--tertiary-hover);
+}
+body *:focus.focus--tertiary-ultra-light {
+  --focus-color: var(--tertiary-ultra-light);
+}
+body .focus--tertiary-ultra-light *:focus,
+body .focus--tertiary-ultra-light:focus-within {
+  --focus-color: var(--tertiary-ultra-light);
+}
+body *:focus.focus--tertiary-light {
+  --focus-color: var(--tertiary-light);
+}
+body .focus--tertiary-light *:focus,
+body .focus--tertiary-light:focus-within {
+  --focus-color: var(--tertiary-light);
+}
+body *:focus.focus--tertiary-semi-light {
+  --focus-color: var(--tertiary-semi-light);
+}
+body .focus--tertiary-semi-light *:focus,
+body .focus--tertiary-semi-light:focus-within {
+  --focus-color: var(--tertiary-semi-light);
+}
+body *:focus.focus--tertiary-semi-dark {
+  --focus-color: var(--tertiary-semi-dark);
+}
+body .focus--tertiary-semi-dark *:focus,
+body .focus--tertiary-semi-dark:focus-within {
+  --focus-color: var(--tertiary-semi-dark);
+}
+body *:focus.focus--tertiary-dark {
+  --focus-color: var(--tertiary-dark);
+}
+body .focus--tertiary-dark *:focus,
+body .focus--tertiary-dark:focus-within {
+  --focus-color: var(--tertiary-dark);
+}
+body *:focus.focus--tertiary-ultra-dark {
+  --focus-color: var(--tertiary-ultra-dark);
+}
+body .focus--tertiary-ultra-dark *:focus,
+body .focus--tertiary-ultra-dark:focus-within {
+  --focus-color: var(--tertiary-ultra-dark);
+}
+body *:focus.focus--accent {
+  --focus-color: var(--accent);
+}
+body .focus--accent *:focus,
+body .focus--accent:focus-within {
+  --focus-color: var(--accent);
+}
+body *:focus.focus--accent-hover {
+  --focus-color: var(--accent-hover);
+}
+body .focus--accent-hover *:focus,
+body .focus--accent-hover:focus-within {
+  --focus-color: var(--accent-hover);
+}
+body *:focus.focus--accent-ultra-light {
+  --focus-color: var(--accent-ultra-light);
+}
+body .focus--accent-ultra-light *:focus,
+body .focus--accent-ultra-light:focus-within {
+  --focus-color: var(--accent-ultra-light);
+}
+body *:focus.focus--accent-light {
+  --focus-color: var(--accent-light);
+}
+body .focus--accent-light *:focus,
+body .focus--accent-light:focus-within {
+  --focus-color: var(--accent-light);
+}
+body *:focus.focus--accent-semi-light {
+  --focus-color: var(--accent-semi-light);
+}
+body .focus--accent-semi-light *:focus,
+body .focus--accent-semi-light:focus-within {
+  --focus-color: var(--accent-semi-light);
+}
+body *:focus.focus--accent-semi-dark {
+  --focus-color: var(--accent-semi-dark);
+}
+body .focus--accent-semi-dark *:focus,
+body .focus--accent-semi-dark:focus-within {
+  --focus-color: var(--accent-semi-dark);
+}
+body *:focus.focus--accent-dark {
+  --focus-color: var(--accent-dark);
+}
+body .focus--accent-dark *:focus,
+body .focus--accent-dark:focus-within {
+  --focus-color: var(--accent-dark);
+}
+body *:focus.focus--accent-ultra-dark {
+  --focus-color: var(--accent-ultra-dark);
+}
+body .focus--accent-ultra-dark *:focus,
+body .focus--accent-ultra-dark:focus-within {
+  --focus-color: var(--accent-ultra-dark);
+}
+body *:focus.focus--base {
+  --focus-color: var(--base);
+}
+body .focus--base *:focus,
+body .focus--base:focus-within {
+  --focus-color: var(--base);
+}
+body *:focus.focus--base-hover {
+  --focus-color: var(--base-hover);
+}
+body .focus--base-hover *:focus,
+body .focus--base-hover:focus-within {
+  --focus-color: var(--base-hover);
+}
+body *:focus.focus--base-ultra-light {
+  --focus-color: var(--base-ultra-light);
+}
+body .focus--base-ultra-light *:focus,
+body .focus--base-ultra-light:focus-within {
+  --focus-color: var(--base-ultra-light);
+}
+body *:focus.focus--base-light {
+  --focus-color: var(--base-light);
+}
+body .focus--base-light *:focus,
+body .focus--base-light:focus-within {
+  --focus-color: var(--base-light);
+}
+body *:focus.focus--base-semi-light {
+  --focus-color: var(--base-semi-light);
+}
+body .focus--base-semi-light *:focus,
+body .focus--base-semi-light:focus-within {
+  --focus-color: var(--base-semi-light);
+}
+body *:focus.focus--base-semi-dark {
+  --focus-color: var(--base-semi-dark);
+}
+body .focus--base-semi-dark *:focus,
+body .focus--base-semi-dark:focus-within {
+  --focus-color: var(--base-semi-dark);
+}
+body *:focus.focus--base-dark {
+  --focus-color: var(--base-dark);
+}
+body .focus--base-dark *:focus,
+body .focus--base-dark:focus-within {
+  --focus-color: var(--base-dark);
+}
+body *:focus.focus--base-ultra-dark {
+  --focus-color: var(--base-ultra-dark);
+}
+body .focus--base-ultra-dark *:focus,
+body .focus--base-ultra-dark:focus-within {
+  --focus-color: var(--base-ultra-dark);
+}
+body *:focus.focus--shade {
+  --focus-color: var(--shade);
+}
+body .focus--shade *:focus,
+body .focus--shade:focus-within {
+  --focus-color: var(--shade);
+}
+body *:focus.focus--shade-hover {
+  --focus-color: var(--shade-hover);
+}
+body .focus--shade-hover *:focus,
+body .focus--shade-hover:focus-within {
+  --focus-color: var(--shade-hover);
+}
+body *:focus.focus--shade-ultra-light {
+  --focus-color: var(--shade-ultra-light);
+}
+body .focus--shade-ultra-light *:focus,
+body .focus--shade-ultra-light:focus-within {
+  --focus-color: var(--shade-ultra-light);
+}
+body *:focus.focus--shade-light {
+  --focus-color: var(--shade-light);
+}
+body .focus--shade-light *:focus,
+body .focus--shade-light:focus-within {
+  --focus-color: var(--shade-light);
+}
+body *:focus.focus--shade-semi-light {
+  --focus-color: var(--shade-semi-light);
+}
+body .focus--shade-semi-light *:focus,
+body .focus--shade-semi-light:focus-within {
+  --focus-color: var(--shade-semi-light);
+}
+body *:focus.focus--shade-semi-dark {
+  --focus-color: var(--shade-semi-dark);
+}
+body .focus--shade-semi-dark *:focus,
+body .focus--shade-semi-dark:focus-within {
+  --focus-color: var(--shade-semi-dark);
+}
+body *:focus.focus--shade-dark {
+  --focus-color: var(--shade-dark);
+}
+body .focus--shade-dark *:focus,
+body .focus--shade-dark:focus-within {
+  --focus-color: var(--shade-dark);
+}
+body *:focus.focus--shade-ultra-dark {
+  --focus-color: var(--shade-ultra-dark);
+}
+body .focus--shade-ultra-dark *:focus,
+body .focus--shade-ultra-dark:focus-within {
+  --focus-color: var(--shade-ultra-dark);
+}
+body *:focus.focus--neutral {
+  --focus-color: var(--neutral);
+}
+body .focus--neutral *:focus,
+body .focus--neutral:focus-within {
+  --focus-color: var(--neutral);
+}
+body *:focus.focus--neutral-hover {
+  --focus-color: var(--neutral-hover);
+}
+body .focus--neutral-hover *:focus,
+body .focus--neutral-hover:focus-within {
+  --focus-color: var(--neutral-hover);
+}
+body *:focus.focus--neutral-ultra-light {
+  --focus-color: var(--neutral-ultra-light);
+}
+body .focus--neutral-ultra-light *:focus,
+body .focus--neutral-ultra-light:focus-within {
+  --focus-color: var(--neutral-ultra-light);
+}
+body *:focus.focus--neutral-light {
+  --focus-color: var(--neutral-light);
+}
+body .focus--neutral-light *:focus,
+body .focus--neutral-light:focus-within {
+  --focus-color: var(--neutral-light);
+}
+body *:focus.focus--neutral-semi-light {
+  --focus-color: var(--neutral-semi-light);
+}
+body .focus--neutral-semi-light *:focus,
+body .focus--neutral-semi-light:focus-within {
+  --focus-color: var(--neutral-semi-light);
+}
+body *:focus.focus--neutral-semi-dark {
+  --focus-color: var(--neutral-semi-dark);
+}
+body .focus--neutral-semi-dark *:focus,
+body .focus--neutral-semi-dark:focus-within {
+  --focus-color: var(--neutral-semi-dark);
+}
+body *:focus.focus--neutral-dark {
+  --focus-color: var(--neutral-dark);
+}
+body .focus--neutral-dark *:focus,
+body .focus--neutral-dark:focus-within {
+  --focus-color: var(--neutral-dark);
+}
+body *:focus.focus--neutral-ultra-dark {
+  --focus-color: var(--neutral-ultra-dark);
+}
+body .focus--neutral-ultra-dark *:focus,
+body .focus--neutral-ultra-dark:focus-within {
+  --focus-color: var(--neutral-ultra-dark);
+}
+body *:focus.focus--white {
+  --focus-color: var(--white);
+}
+body .focus--white *:focus,
+body .focus--white:focus-within {
+  --focus-color: var(--white);
+}
+body *:focus.focus--black {
+  --focus-color: var(--black);
+}
+body .focus--black *:focus,
+body .focus--black:focus-within {
+  --focus-color: var(--black);
+}/*# sourceMappingURL=automatic-cwicly.css.map */
